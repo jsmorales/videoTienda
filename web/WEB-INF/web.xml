@@ -22,6 +22,10 @@
         <servlet-name>homeController</servlet-name>
         <servlet-class>videoTienda.controller.homeController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>peliculaService</servlet-name>
+        <servlet-class>videoTienda.services.peliculaService</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>peliculaController</servlet-name>
         <url-pattern>/pelicula</url-pattern>
@@ -33,6 +37,10 @@
     <servlet-mapping>
         <servlet-name>homeController</servlet-name>
         <url-pattern>/homepage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>peliculaService</servlet-name>
+        <url-pattern>/peliculaService</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

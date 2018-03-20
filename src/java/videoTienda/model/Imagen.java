@@ -41,7 +41,7 @@ public class Imagen {
 
     @Override
     public String toString() {
-        return "Imagen{" + "pkID=" + pkID + ", pkID_pelicula=" + pkID_pelicula + ", ruta=" + ruta + '}';
+        return "Imagen:{" + "pkID:" + pkID + ", pkID_pelicula:" + pkID_pelicula + ", ruta:" + ruta + '}';
     }
     
     

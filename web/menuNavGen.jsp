@@ -18,6 +18,7 @@
           <ul class="dropdown-menu">
             <li><a href="pelicula?action=crearPelicula">Nueva Película</a></li>
             <li><a href="pelicula?action=all">Listado de Películas</a></li>
+            <li><a href="pelicula?action=reportePelicula" target="_blank">Reporte de Películas</a></li>
             <!--<li><a href="#">Something else here</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">Separated link</a></li>

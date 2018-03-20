@@ -64,7 +64,12 @@ public class Pelicula {
 
     @Override
     public String toString() {
-        return "Pelicula{" + "pkID=" + pkID + ", codigo=" + codigo + ", nombre=" + nombre + ", descripcion=" + descripcion + ", imagenes=" + imagenes + '}';
+        return "Pelicula:{" + "pkID:" + pkID + ", codigo:" + codigo + ", nombre:" + nombre + ", descripcion:" + descripcion + ", imagenes:" + imagenes + '}';
+    }
+    
+    //@Override
+    public String toJson(){
+        return "{" + "pkID:" + pkID + ", codigo:" + codigo + ", nombre:" + nombre + ", descripcion:" + descripcion + "}";
     }
         
         

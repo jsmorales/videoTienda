@@ -13,6 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 import videoTienda.DAO.connection;
 import videoTienda.DAO.peliculaDAO;
 import videoTienda.model.Pelicula;
+import videoTienda.reportes.reporte1;
+import videoTienda.reportes.reporte2;
 import videoTienda.utilidades.Redireccionar;
 
 /**
@@ -65,7 +67,16 @@ public class peliculaController extends HttpServlet {
             this.cargaFormPelicula(request, response, Integer.parseInt(request.getParameter("pkID_pelicula")));
         }else if("eliminarPelicula".equals(actionParam)){
             this.eliminaPelicula(request, response, Integer.parseInt(request.getParameter("pkID")));
+        }else if("reportePelicula".equals(actionParam)){
+            //this.eliminaPelicula(request, response, Integer.parseInt(request.getParameter("pkID")));
+            this.reportePelicula(request, response);
         }
+    }
+    
+    protected void reportePelicula(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException{
+    
+        reporte2.genReporte(request, response);
     }
     
     protected void verTodos(HttpServletRequest request, HttpServletResponse response)
